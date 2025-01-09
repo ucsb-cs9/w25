@@ -141,7 +141,12 @@ For this lab, if everything is correct, you'll see a successful submission passi
 
 ![Gradescope_results](Gradescope_results.PNG)
 
-**Tip: Removing print statements**
+**Tips:**
+
+**1) Commenting out assert statements that don't pass**
+Note that if any assert statement in your code does not pass, then the autograder will not execute any of the tests and award 0 points (even if some of your functionality is correct). If this is the case, try commenting out the assert statements before submitting your code to Gradescope.
+
+**2) Removing print statements**
 If you see the following error message:
 
 ```The autograder failed to execute correctly. Please ensure that your submission is valid. Contact your course staff for help in debugging this issue. Make sure to include a link to this page so that they can help you most effectively.```
