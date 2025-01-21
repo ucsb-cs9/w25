@@ -193,7 +193,7 @@ class Cow(Animal):
 		s = "Using Super class getSound method\n"
 		s += Animal.getSound(self) + "\n" # Uses Animal.getSound method
 		s += "Extending it with our own getSound functionality" + "\n"
-		s += "{}!!!".format(self.sound, self.sound)
+		s += "{}!!!".format(self.sound)
 		return s
 
 # Output:
