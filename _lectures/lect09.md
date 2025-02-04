@@ -5,7 +5,7 @@ ready: true
 lecture_date: 2025-02-04 11:00:00.00-7:00
 ---
 
-Recorded Lecture: [2_4_25](https://drive.google.com/file/d/199mAUiyTvF0PN2X8dzyMpk6NBcucAiX_/view?usp=drive_link)
+Recorded Lecture: [2-4-25](https://drive.google.com/file/d/199mAUiyTvF0PN2X8dzyMpk6NBcucAiX_/view?usp=drive_link)
 
 # Stacks
 
