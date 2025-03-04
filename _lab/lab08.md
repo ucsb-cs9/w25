@@ -132,17 +132,17 @@ The `CourseCatalog` class is structured according to the specifications below. G
 
 * Attributes:
 
-    * `root` - the root of the tree
+    * `root` - the root of the tree. **Note: CourseCatalog should only have 1 attribute `root`. Any extra attribute may break the test code**
 
 * Methods:
 
     * `__init__(self)` - initializes an empty binary search tree.
-    * `addCourse(self, department, courseId, courseName, lecture, sections)` - returns a boolean value. Insert a course into the binary search tree. If a course with the same `department` and `courseId` already exists, return `False` and do nothing. Otherwise, insert a new course node in the Binary Search Tree and return `True`
+    * `addCourse(self, department, courseId, courseName, lecture, sections)` - returns a boolean value. Insert a course into the binary search tree. If a course with the same `department` and `courseId` already exists, return `False` and do nothing. Otherwise, insert a new course node in the Binary Search Tree and return `True`. **Note: The `department` parameter may not necessarily be in uppercase**
     * `addSection(self, department, courseId, section)` - returns a boolean value. Insert a section into the Binary Search Tree to the course identified by `department` and `courseId`. If the course does not exist, return `False` and do nothing. Otherwise, append the new section to the end of the corresponding node's sections list (`sections`) and return `True`. **Note: The `department` parameter may not necessarily be in uppercase**
     * `inOrder(self)` - returns a string containing the information for all courses using an in-order traversal of the Binary Search Tree
     * `preOrder(self)` - returns a string containing the information for all courses using a pre-order traversal of the Binary Search Tree
     * `postOrder(self)` - returns a string containing the information for all courses using a post-order traversal of the Binary Search Tree
-    * `getAttendableSections(self, department, courseId, availableDay, availableTime)` - returns a string containing all sections of the course identified by `department` and `courseId` that are held on `availableDay` and within the time period `availableTime`. An empty string is returned if there are no attendable sections. **Note: `department` may not be in uppercase.**
+    * `getAttendableSections(self, department, courseId, availableDay, availableTime)` - given a course identified by `department` and `courseId`, finds all sections of it held on `availableDay` and within the time period `availableTime`. Returns a string containing the information of all such sections. An empty string is returned if there are no attendable sections. **Note: The `department` parameter may not necessarily be in uppercase**
     * `countCoursesByDepartment(self)` - returns a dictionary. Counts the number of courses in each department within the binary search tree. The keys of the dictionary are department codes, and the values are integers representing the count of courses in the corresponding department
 
 **Example:**
