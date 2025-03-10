@@ -24,14 +24,14 @@ The lab specifications in Lab08 apply to this lab, but this lab will specificall
 
 ## CourseCatalog.py
 
-The `CourseCatalog.py` file will contain the definition of the `CourseCatalog` class, which is a Binary Search Tree that manages all `CourseCatalogNode` objects keyed by `department` and `courseId`. For additional details about the existing requirements, please refer to the Lab08 instructions.
+The `CourseCatalog.py` file will contain the definition of the `CourseCatalog` class, which is a Binary Search Tree that manages all `CourseCatalogNode` objects keyed by `department` and `courseId`. For additional details about the existing requirements, please refer to the Lab08 instructions. Especially, please note: **CourseCatalog should only have 1 attribute `root`. Any extra attribute may break the test code**
 
 In addition to the previously created methods, the following new methods are required to be implemented:
 
 * Methods:
 
     * `removeCourse(self, department, courseId)` - returns a boolean value. Remove a course node identified by `department` and `courseId` from the Binary Search Tree. If the course does not exist, return `False` and do nothing. Otherwise, remove the course node and return `True`. **Note: The `department` parameter may not necessarily be in uppercase**
-    * `removeSection(self, department, courseId, section)` - returns a boolean value. Remove a section (containing the same section `Event` fields) from a course node in the Binary Search Tree. If the course identified by `department` and `courseId` does not exist in the Course Catalog, or if the course exists but the section does not exist, return `False` and do nothing. Otherwise, remove the section from the Course Catalog Node's sections list (`sections`) if it exists, and return `True`. You can assume there are no duplicate sections in a course node's sections list. **Note: The `department` parameter may not necessarily be in uppercase**
+    * `removeSection(self, department, courseId, section)` - returns a boolean value. Remove a section (containing the same section `Event` fields) from a course node in the Binary Search Tree. If the course identified by `department` and `courseId` does not exist in the Course Catalog, or if the course exists but the section does not exist, return `False` and do nothing. Otherwise, remove the section from the Course Catalog Node's sections list (`sections`) and return `True`. You can assume there are no duplicate sections in a course node's sections list. **Note: The `department` parameter may not necessarily be in uppercase**
 
 Note: When removing a course node with two children (case 3), use the technique of replacing it with its successor as discussed in the lecture and textbook. You may find it useful to implement a getSuccessor helper method to find the successor of a node, following the approach outlined in the textbook.
 
